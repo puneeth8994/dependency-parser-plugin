@@ -1,0 +1,20 @@
+name: dependency-parser
+version: 0.0.1
+commands:
+  - name: "list-deps"
+    baseArgs: ["/bin/sh"]
+    usage: "devspace list-deps <devspace_label>"
+    description: "lists the config dependencies"
+binaries:
+  - os: darwin
+    arch: amd64
+    path: ./parser-script.sh
+  - os: darwin
+    arch: arm64
+    path: ./parser-script.sh
+  - os: linux
+    arch: amd64
+    path: ./parser-script.sh
+  - os: linux
+    arch: "386"
+    path: ./parser-script.sh
