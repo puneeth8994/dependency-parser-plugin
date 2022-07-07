@@ -1,9 +1,9 @@
 name: dependency-parser
 version: 0.0.1
 commands:
-  - name: "list-deps"
+  - name: "troubleshoot"
     baseArgs: ["/bin/sh"]
-    usage: "devspace list-deps <devspace_label>"
+    usage: "devspace troubleshoot"
     description: "lists the config dependencies"
 binaries:
   - os: darwin
